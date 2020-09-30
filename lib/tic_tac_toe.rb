@@ -17,8 +17,8 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input)
-  user_input.to_i - 1
+def input_to_index(input)
+  input.to_i - 1
 end
 
 def move(board, index, current_player)
@@ -101,30 +101,15 @@ def winner(board)
   else
     return board[won?(board)[0]]
   end
-
-  WIN_COMBINATIONS.each do |combo|
-
-    position_1 = board[combo[0]]
-    position_2 = board[combo[1]]
-    position_3 = board[combo[2]]
-
-    if position_1 == "X" && position_2 == "X" && position_3 = "X" || position_1 == "O" && position_2 == "O" && position_3 = "O"
-      return [combo[0], combo[1], combo[2]]
-    else
-      false
-    end
-  end
 end
 
 def play(board)
-  loop do
+  until over?(board)
     turn(board)
-    if won?(board) == [combo[0], combo[1], combo[2]]
-      puts "Congrats, #{winner(board)} you are the winner!"
-      break
-    elsif draw?(board) == true
-      print "Cat's Game!"
-      break
-    end
   end
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    elsif draw?(board)
+      puts "Cat's Game!"
+    end
 end
