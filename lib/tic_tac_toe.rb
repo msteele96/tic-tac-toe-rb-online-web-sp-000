@@ -119,7 +119,7 @@ end
 def play(board)
   loop do
     turn(board)
-    if won?(board) == win_combination
+    if won?(board) == [combo[0], combo[1], combo[2]]
       puts "Congrats, #{winner(board)} you are the winner!"
       break
     elsif draw?(board) == true
