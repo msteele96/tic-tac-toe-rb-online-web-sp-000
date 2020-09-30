@@ -102,7 +102,6 @@ def winner(board)
     return board[won?(board)[0]]
   end
 
-<<<<<<< HEAD
   WIN_COMBINATIONS.each do |combo|
 
     position_1 = board[combo[0]]
