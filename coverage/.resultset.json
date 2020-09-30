@@ -13,6 +13,7 @@
         null,
         null,
         null,
+<<<<<<< HEAD
         1,
         14,
         14,
@@ -46,10 +47,47 @@
         9,
         null,
         1,
+=======
+        null,
+        1,
+        30,
+        30,
+        30,
+        30,
+        30,
+        null,
+        null,
+        1,
+        47538,
+        null,
+        null,
+        1,
+        29,
+        null,
+        null,
+        1,
+        47540,
+        null,
+        null,
+        1,
+        47538,
+        null,
+        null,
+        1,
+        47545,
+        47539,
+        47535,
+        47535,
+        25,
+        25,
+        null,
+        47510,
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
         null,
         null,
         null,
         1,
+<<<<<<< HEAD
         11,
         11,
         99,
@@ -62,12 +100,27 @@
         1,
         10,
         10,
+=======
+        2,
+        2,
+        18,
+        5,
+        null,
+        null,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
         null,
         0,
         null,
         null,
         null,
         1,
+<<<<<<< HEAD
         22,
         null,
         161,
@@ -79,6 +132,19 @@
         null,
         null,
         14,
+=======
+        16,
+        null,
+        113,
+        113,
+        113,
+        null,
+        113,
+        8,
+        null,
+        null,
+        8,
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
         null,
         null,
         1,
@@ -107,6 +173,12 @@
         null,
         null,
         0,
+<<<<<<< HEAD
+=======
+        0,
+        0,
+        0,
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
         null,
         0,
         0,
@@ -123,17 +195,27 @@
         1,
         12,
         12,
+<<<<<<< HEAD
         7,
         0,
         0,
         0,
         0,
+=======
+        35,
+        35,
+        23,
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
         0,
         null,
         null,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1601484203
+=======
+    "timestamp": 1601481126
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
   }
 }

@@ -9,6 +9,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+<<<<<<< HEAD
+=======
+# Helper Methods
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -21,7 +25,11 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+<<<<<<< HEAD
 def move(board, index, current_player)
+=======
+def move(board, index, current_player = "X")
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
   board[index] = current_player
 end
 
@@ -38,7 +46,11 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
+<<<<<<< HEAD
     move(board, index, current_player(board))
+=======
+    move(board, index)
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
     display_board(board)
   else
     turn(board)
@@ -102,6 +114,7 @@ def winner(board)
     return board[won?(board)[0]]
   end
 
+<<<<<<< HEAD
   WIN_COMBINATIONS.each do |combo|
 
     position_1 = board[combo[0]]
@@ -110,6 +123,19 @@ def winner(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 = "X" || position_1 == "O" && position_2 == "O" && position_3 = "O"
       return [combo[0], combo[1], combo[2]]
+=======
+  WIN_COMBINATIONS.each do |i|
+    win_index_1 = WIN_COMBINATIONS[0]
+    win_index_2 = WIN_COMBINATIONS[1]
+    win_index_3 = WIN_COMBINATIONS[2]
+
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+
+    if position_1 == "X" && position_2 == "X" && position_3 = "X" || position_1 == "O" && position_2 == "O" && position_3 = "O"
+      return win_combination
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
     else
       false
     end
@@ -117,6 +143,7 @@ def winner(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   loop do
     turn(board)
     if won?(board) == [combo[0], combo[1], combo[2]]
@@ -124,6 +151,13 @@ def play(board)
       break
     elsif draw?(board) == true
       print "Cat's Game!"
+=======
+  counter = 0
+  loop do
+    counter += 1
+    turn(board)
+    if counter == 9
+>>>>>>> bb93bfbd2a0acc99ed82a4ac6891a6b22418f187
       break
     end
   end
